@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="bg-[#94725C] transition duration-[5000ms] h-screen hover:bg-[#2B2322] hover:duration-300 grid place-content-center">
-        <img src="/assets/img/Painting wpp.jpg" alt="" class="rounded-full w-96 h-96">
-    </div>    
+    <div class="grid bg-[#94725C] transition duration-[5000ms] h-screen hover:bg-[#2B2322] hover:duration-300">
+        <div class="hgg">
+            <button class="bg-[#94725C]">About page</button>
+            <button class="bg-[#94725C]">Project page</button>
+            <button class="bg-[#94725C]">Check its Github</button>
+        </div>
+            <div class="flex flex-col items-center mt-40">
+                <p class="text-[#DFC5B3] text-[64px] font-medium">Welcome ! You are on Liliane's page</p>
+                <img src="/assets/img/Painting wpp.jpg" alt="" class="rounded-full w-96 h-96 border-4 border-[#E8BB9D]">
+                <p class="pt-60 text-[#DFC5B3] text-[21px] font-medium">© 2023 - all rights reserved</p>
+            </div>
+    </div>
 </body>
+
 </html>
