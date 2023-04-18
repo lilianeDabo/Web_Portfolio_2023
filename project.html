@@ -13,34 +13,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body class="grid bg-[#2B2322] border-[#E8BB9D] border-4 overflow-y-scroll">
+<body class="grid bg-[#2B2322] border-[#E8BB9D] border-4 max-xl:border-[#6985CF] overflow-y-scroll">
     <header class="grenzeFont text-[#DFC5B3] grid items-center">
         <div class="flex gap-3 mt-3 ml-6">
-            <button
-                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
+            <button onclick="window.location.href='http://127.0.0.1:5500/about.html';"
+                class="bg-[#94725C] h-20 max-xl:h-12 w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
                 page</button>
-            <button
-                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Project
+            <button onclick="window.location.href='http://127.0.0.1:5500/index.html';"
+                class="bg-[#94725C] h-20 max-xl:h-12 w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Home
                 page</button>
         </div>
-        <img src="/assets/img/meFront.jpg" alt="" class="w-[200px] h-[200px] rounded-full mr-3 justify-self-end">
-        <p class="grenzeFont text-3xl justify-self-center">Projects accomplished</p>
+        <div class="flex justify-end items-center gap-[68vh] max-2xl:gap-[38vh] max-sm:gap-[28vh] mb-3">
+            <p class="grenzeFont text-3xl ">Projects accomplished</p>
+            <img src="/assets/img/meFront.jpg" alt="" class="w-[200px] h-[200px] rounded-full mr-3 justify-self-end max-xl:border-[#6985CF] max-xl:border-4">
+        </div>
     </header>
     <!-- Skills -->
-    <main class="grid grenzeFont text-[#DFC5B3] text-2xl">
-        <div class="flex items-baseline">
-            <div class="flex flex-col items-center m-auto ">
+    <main class="grid grenzeFont text-[#DFC5B3] text-2xl max-sm:text-lg">
+        <div class="flex items-center">
+            <div class="flex flex-col items-center ml-auto mr-auto ">
                 <p class="text-3xl mb-12">Current skills</p>
                 <div class="grid grid-cols-3 grid-rows-3">
-                    <img src="/assets/img/jsIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/javaIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/ciscoIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/cssHTMLIcon.svg" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/bashIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/fyneIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/goIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/tailwindIcon.png" alt="" class="w-[100px] h-[100px] m-3">
-                    <img src="/assets/img/gitIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/jsIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/javaIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/ciscoIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/cssHTMLIcon.svg" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/bashIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/fyneIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/goIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/tailwindIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
+                    <img src="/assets/img/gitIcon.png" alt="" class="w-[100px] h-[100px] max-sm:w-[70px] max-sm:h-[70px] m-3">
                 </div>
             </div>
             <!-- Contacts -->
@@ -87,11 +89,11 @@
 
     <footer class="grenzeFont text-[#DFC5B3] flex justify-center mb-3">
         <div class="flex gap-3 mt-3 ml-6">
-            <button
+            <button onclick="window.location.href='http://127.0.0.1:5500/about.html';"
                 class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
                 page</button>
-            <button
-                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Project
+            <button onclick="window.location.href='http://127.0.0.1:5500/index.html';"
+                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Home
                 page</button>
         </div>
     </footer>
