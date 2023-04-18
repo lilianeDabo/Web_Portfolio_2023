@@ -13,67 +13,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body class="grid bg-[#94725C] border-[#E8BB9D] border-4">
-    <header class="grenzeFont text-[#E8BB9D]">
-        <div class="flex gap-4 mt-3 ml-6">
-            <button class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32">Home page</button>
-            <button class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32">Project page</button>
-        </div>
+<body class="relative h-full grid bg-[#94725C] border-[#E8BB9D] border-4">
+    <!-- buttons -->
+    <header class="grenzeFont text-[#E8BB9D] flex gap-4 ml-6 my-3">
+        <button
+            class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32 hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Home
+            page</button>
+        <button
+            class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32 hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Project
+            page</button>
     </header>
-    <main class="ml-20 grenzeFont overflow-x-scroll">
+    <main class="ml-20 grenzeFont overflow-x-scroll text-2xl text-[#DFC5B3]">
         <div class="flex w-full h-full whitespace-nowrap gap-x-8">
-            <div class="w-[900px] h-[700px]">
-                <p class="text-[#E8BB9D] grenzeShadowTextlight">My about page</p>
-                <img src="/assets/img/legends-of-runeterra-mighty-poro-uhdpaper.com-hd-mobile-4.1603.jpg" alt=""
-                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] drop-shadow-lg">
-                <p class="text-[#E8BB9D] line-through grenzeShadowTextlight">Criminal file : [081299]</p>
-                <p class="text-[#E8BB9D] grenzeShadowTextlight">REDACTED</p>
-                <p class="grenzeShadowText">| Seize suspect at all cost |</p>
-                <p class="grenzeShadowText">| Track location : PRIORITY |</p>
+            <div class="w-[900px] h-[700px] flex flex-col items-center">
+                <p class=" drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] mb-12">My about page</p>
+                <img src="/assets/img/meFront.jpg" alt=""
+                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] mb-12">
+                <p class=" line-through drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Criminal file : [081299]</p>
+                <p class=" grenzeShadowTextlight text-3xl">REDACTED</p>
+                <p class="text-[#2B2322] grenzeShadowText text-lg">| Seize suspect at all cost |</p>
+                <p class=" text-[#2B2322] grenzeShadowText text-lg">| Track location : PRIORITY |</p>
             </div>
-            <div class="w-[900px] h-[700px]">
-                <p class="text-[#E8BB9D] grenzeShadowTextlight">General interest</p>
-                <li class="text-[#E8BB9D] grenzeShadowTextlight">Computer Science ( Development & Software Engineering )</li>
-                <li class="text-[#E8BB9D] grenzeShadowTextlight">Languages ( English, French, Spanish and Mandarin )</li>
-                <li class="text-[#E8BB9D] grenzeShadowTextlight">Music ( Home page playlist is allegedly theirs )</li>
-                <li class="text-[#E8BB9D] grenzeShadowTextlight">Dungeons and Dragons</li>
-                <li class="text-[#E8BB9D] grenzeShadowTextlight"> RPGs / Horror</li>
-                <p class="text-[#E8BB9D] grenzeShadowTextlight">Personality</p>
-                <p class="grenzeShadowText">INTJ - T</p>
-                <p class="grenzeShadowText">|Proceed with caution|</p>
-                <img src="/assets/img/intj-architect.png" alt="" />
+            <div class="w-[900px] h-[700px] flex flex-col items-center">
+                <div class=" text-lg text-[#2B2322] font-medium mb-12 flex flex-col items-center">
+                    <p class=" drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] text-3xl text-[#DFC5B3] font-normal mb-3">General
+                        interest</p>
+                    <!-- list -->
+                    <li>Computer Science ( Development & Software Engineering )</li>
+                    <li>Languages ( English, French, Spanish and Mandarin )</li>
+                    <li>Music ( Home page playlist is allegedly theirs )</li>
+                    <li>Dungeons and Dragons</li>
+                    <li> RPGs / Horror</li>
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="text-3xl">Personality</p>
+                    <p class="grenzeShadowText text-[#695654]">INTJ - T</p>
+                    <p class="text-lg text-[#2B2322] font-medium mb-3">|Proceed with caution|</p>
+                    <img src="/assets/img/intjIcon.png" alt="" class="w-[322px] h-[318px] border-[#000000] border-4" />
+                </div>
             </div>
-            <div class="w-[900px] h-[700px]">
+            <div class="w-[900px] h-fit flex flex-col items-center drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">
                 <p>LAST SEEN IN</p>
                 <p>COMPANY</p>
-                <p>OF</p>
-                <img src="/assets/img/lounesFront.png" alt="">
-                <img src="/assets/img/elisaFront.jpg" alt="">
+                <p class="mb-3">OF</p>
+                <img src="/assets/img/lounesFront.png" alt=""
+                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] mb-3">
+                <img src="/assets/img/elisaFront.jpg" alt=""
+                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322]">
             </div>
-            <div class="w-[900px] h-[700px]">
-                <p class="text-[#E8BB9D] grenzeShadowTextlight">ALIAS</p>
-                <div class="flex">
-                    <img src="/assets/img/Discord_Logo_sans_texte.svg.png" alt="" class="">
-                    <p class="text-[#E8BB9D] line-through grenzeShadowTextlight">*Nynster* #5637</p>
-                </div>
-                <div class="flex">
-                    <p class="text-[#E8BB9D] line-through grenzeShadowTextlight">lilianeDabo</p>
-                    <p class="text-[#E8BB9D] line-through grenzeShadowTextlight">( Source unconfirmed )</p>
-                </div>
+            <div class="w-[900px] h-[700px] flex flex-col items-center">
+                <div class="flex flex-col items-center">
+                    <p class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] text-3xl">ALIAS</p>
+                    <div class="flex items-center gap-3">
+                        <img src="/assets/img/discordIcon.png" alt="" class="w-[60px] h-[60px]">
+                        <p class="grenzeShadowTextlight text-[#2B2322]">*Nynster* #5637</p>
+                    </div>
+                    <p class="text-[#695654] mr-3">lilianeDabo</p>
+                    <div class="flex">
+                        <p class="text-[#2B2322]">( Source unconfirmed )
+                    </div>
+                    <p class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] mb-3 mt-12 text-3xl">Further reports to case</p>
 
-                <p class="text-[#E8BB9D] grenzeShadowTextlight">Further reports to case</p>
-
-                <div class="flex">
-                    <img src="/assets/img/pinterest-logo-8561DDA2E1-seeklogo.com.png" alt="" class="">
-                    <p class="text-[#E8BB9D] line-through grenzeShadowTextlight">Visual Criminal Profile reports</p>
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="/assets/img/pinterestIcon.png" alt="" class="w-[60px] h-[60px]">
+                        <p class=" text-[#2B2322] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Visual Criminal Profile
+                            reports</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="/assets/img/youtubeIcon.png" alt="" class="w-[60px] h-[60px]">
+                        <p class="text-[#2B2322] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Criminal online activity (
+                            playlists )
+                        </p>
+                    </div>
                 </div>
-                <div class="flex">
-                    <img src="/assets/img/YouTube_full-color_icon_(2017).svg.png" alt="" class="">
-                    <p class="text-[#E8BB9D] line-through grenzeShadowTextlight">Criminal online activity ( playlists )
-                    </p>
-
-                </div>
+            </div>
+        </div>
     </main>
+    <!-- my attempt -->
     <!-- <main class="ml-20 grenzeFont ">
         <div class="flex overflow-x-scroll w-full h-full gap-[300px]">
                 <div class="">
@@ -115,9 +131,10 @@
         </div>
 
     </main> -->
-    <footer>
+    <footer class="absolute h-0">
     </footer>
 </body>
+<!-- js code -->
 <!-- <script>
     var item = document.body;
 

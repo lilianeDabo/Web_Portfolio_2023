@@ -13,70 +13,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body class="grid bg-[#2B2322] border-[#E8BB9D] border-4">
-    <header class="grenzeFont text-[#E8BB9D]">
-        <div class="flex gap-4 mt-3 ml-6">
-            <button class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32">About page</button>
-            <button class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32">Home page</button>
+<body class="grid bg-[#2B2322] border-[#E8BB9D] border-4 overflow-y-scroll">
+    <header class="grenzeFont text-[#DFC5B3] grid items-center">
+        <div class="flex gap-3 mt-3 ml-6">
+            <button
+                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
+                page</button>
+            <button
+                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Project
+                page</button>
         </div>
+        <img src="/assets/img/meFront.jpg" alt="" class="w-[200px] h-[200px] rounded-full mr-3 justify-self-end">
+        <p class="grenzeFont text-3xl justify-self-center">Projects accomplished</p>
     </header>
-    <main class="grid grenzeFont text-[#E8BB9D]">
-        <div class="flex justify-center">
-            <p class="grenzeFont text-[#E8BB9D]">Projects accomplished</p>
-            <img src="/assets/img/meFront.jpg" alt="">
-        </div>
-        <div class="flex">
-            <div class="grid">
-                Current skills
-                <div class="grid">
-                    <p>l</p>
-                    <p>l</p>
+    <!-- Skills -->
+    <main class="grid grenzeFont text-[#DFC5B3] text-2xl">
+        <div class="flex items-baseline">
+            <div class="flex flex-col items-center m-auto ">
+                <p class="text-3xl mb-12">Current skills</p>
+                <div class="grid grid-cols-3 grid-rows-3">
+                    <img src="/assets/img/jsIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/javaIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/ciscoIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/cssHTMLIcon.svg" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/bashIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/fyneIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/goIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/tailwindIcon.png" alt="" class="w-[100px] h-[100px] m-3">
+                    <img src="/assets/img/gitIcon.png" alt="" class="w-[100px] h-[100px] m-3">
                 </div>
             </div>
-            <div>
-                <p>Links to Projects</p>
-                <div class="flex">
-                    <img src="/assets/img/githubIcon.png" alt="">
-                    <p>Public Github repositories</p>
+            <!-- Contacts -->
+            <div class="ml-auto mr-auto">
+                <div class="flex flex-col items-center">
+                    <p class="text-3xl mb-16">Links to Projects</p>
+                    <div class="flex items-center gap-3">
+                        <img src="/assets/img/githubIcon.png" alt="" class="w-[100px] h-[100px]">
+                        <p>Public Github repositories</p>
+                    </div>
+                </div>
+                <div class="mt-20 flex flex-col items-center">
+                    <p class="text-3xl mb-16">Contact Info</p>
+                    <div class="flex">
+                        <img src="/assets/img/ynovIcon.png" alt="" class="w-[100px] h-[100px]">
+                        <p>liliane.dabo@ynov.com</p>
+                    </div>
+                    <div class="flex">
+                        <img src="/assets/img/outlookIcon.png" alt="" class="w-[100px] h-[100px]">
+                        <p>lilianedabo@outlook.com</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="">
-            <div>
-            <p>Contact Info</p>
-            <div class="flex">
-                <img src="" alt="">
-                <p>liliane.dabo@ynov.com</p>
-            </div>
-            <div class="flex">
-                <img src="" alt="">
-                <p>lilianedabo@outlook.com</p>
-            </div>
-        </div>
-
-        </div>
-
-        <div><p>School Projects</p>
-            <div>
-                <img src="" alt="">
-                <p>Tamagotchi in Java</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Setting up a Virtual Machine using Debian and Creating an IT infrastructure from scratch</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Creating a Spotify-like app using fyne in Golang</p>
+        <!-- Project showcase -->
+        <div class="flex flex-col items-center text-3xl mb-auto">
+            <p class="mb-20">School Projects</p>
+            <div class="">
+                <div class="flex flex-row items-center gap-20">
+                    <img src="/assets/img/tamagotchiJava.png" alt="" class="w-[200px] h-[200px]">
+                    <p>Tamagotchi in Java</p>
+                </div>
+                <div class="flex flex-row items-center gap-20">
+                    <img src="/assets/img/glpiVM.png" alt="" class="w-[200px] h-[200px]">
+                    <p>Setting up a Virtual Machine using Debian and Creating an IT infrastructure from scratch</p>
+                </div>
+                <div class="flex flex-row items-center gap-20">
+                    <img src="/assets/img/spotifyGo.png" alt="" class="w-[200px] h-[200px]">
+                    <p>Creating a Spotify-like app using fyne in Golang</p>
+                </div>
             </div>
         </div>
-
     </main>
 
-    <footer>
-        <div class="flex gap-4 mt-3 ml-6">
-            <button class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32">About page</button>
-            <button class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32">Home page</button>
+    <footer class="grenzeFont text-[#DFC5B3] flex justify-center mb-3">
+        <div class="flex gap-3 mt-3 ml-6">
+            <button
+                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
+                page</button>
+            <button
+                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Project
+                page</button>
         </div>
     </footer>
 </body>

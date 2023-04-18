@@ -1,14 +1,11 @@
-body, html {
+/* content takes up full page */
+html {
     height: 100%;
 }
 
+/* vertical scroller hidden */
 body {
-    overflow-x: hidden;
-}
-
-.fullPage {
-    height: 100%;
-    /* width: 100%; */
+    overflow-y: hidden;
 }
 
 .grenzeFont{
