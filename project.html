@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project page - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/css/styleAbout.css">
+    <link rel="stylesheet" href="/assets/css/styleProject.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body class="grid bg-[#2B2322] border-[#E8BB9D] border-4 max-xl:border-[#6985CF] overflow-y-scroll">
+<body class="grid bg-[#2B2322] border-[#E8BB9D] border-4 max-xl:border-[#6985CF] overflow-x scrollHiding">
     <header class="grenzeFont text-[#DFC5B3] grid items-center">
         <div class="flex gap-3 mt-3 ml-6">
             <button onclick="window.location.href='http://127.0.0.1:5500/about.html';"
@@ -25,7 +25,7 @@
         </div>
         <div class="flex justify-end items-center gap-[68vh] max-2xl:gap-[38vh] max-sm:gap-[28vh] mb-3">
             <p class="grenzeFont text-3xl ">Projects accomplished</p>
-            <img src="/assets/img/meFront.jpg" alt="" class="w-[200px] h-[200px] rounded-full mr-3 justify-self-end max-xl:border-[#6985CF] max-xl:border-4">
+            <div class="hover:bg-[url('/assets/img/meBack.jpg')] bg-[url('/assets/img/meFront.jpg')] bg-cover hover:border-[#695654] w-[200px] h-[200px] rounded-full mr-3 justify-self-end  max-xl:border-[#6985CF] max-xl:border-4"></div>
         </div>
     </header>
     <!-- Skills -->
@@ -51,18 +51,18 @@
                     <p class="text-3xl mb-16">Links to Projects</p>
                     <div class="flex items-center gap-3">
                         <img src="/assets/img/githubIcon.png" alt="" class="w-[100px] h-[100px]">
-                        <p>Public Github repositories</p>
+                        <a href="https://github.com/lilianeDabo" target="_blank" class="hover:text-[#6985CF] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Public Github repositories</a>
                     </div>
                 </div>
                 <div class="mt-20 flex flex-col items-center">
                     <p class="text-3xl mb-16">Contact Info</p>
-                    <div class="flex">
+                    <div class="flex gap-3">
                         <img src="/assets/img/ynovIcon.png" alt="" class="w-[100px] h-[100px]">
-                        <p>liliane.dabo@ynov.com</p>
+                        <button class="hover:text-[#6985CF]" onclick="copyToClipboard()"><input type="text" value="liliane.dabo@ynov.com" id="myInput" class="bg-[#2B2322] cursor-pointer"></button>
                     </div>
-                    <div class="flex">
+                    <div class="flex gap-3">
                         <img src="/assets/img/outlookIcon.png" alt="" class="w-[100px] h-[100px]">
-                        <p>lilianedabo@outlook.com</p>
+                        <button class="hover:text-[#6985CF]" onclick="copyToClipboard()"><input type="text" value="liliane.dabo@outlook.com" id="myInput" class="bg-[#2B2322] cursor-pointer"></button>
                     </div>
                 </div>
             </div>
@@ -70,17 +70,17 @@
         <!-- Project showcase -->
         <div class="flex flex-col items-center text-3xl mb-auto">
             <p class="mb-20">School Projects</p>
-            <div class="">
-                <div class="flex flex-row items-center gap-20">
-                    <img src="/assets/img/tamagotchiJava.png" alt="" class="w-[200px] h-[200px]">
+            <div class="ml-12">
+                <div class="flex flex-row items-center gap-20 mb-3">
+                    <img src="/assets/img/tamagotchiJava.png" alt="" class="w-[60vw] h-[60vh]">
                     <p>Tamagotchi in Java</p>
                 </div>
-                <div class="flex flex-row items-center gap-20">
-                    <img src="/assets/img/glpiVM.png" alt="" class="w-[200px] h-[200px]">
+                <div class="flex flex-row items-center gap-20 mb-3">
+                    <img src="/assets/img/glpiVM.png" alt="" class="w-[60vw] h-[60vh]">
                     <p>Setting up a Virtual Machine using Debian and Creating an IT infrastructure from scratch</p>
                 </div>
-                <div class="flex flex-row items-center gap-20">
-                    <img src="/assets/img/spotifyGo.png" alt="" class="w-[200px] h-[200px]">
+                <div class="flex flex-row items-center gap-20 mb-3">
+                    <img src="/assets/img/spotifyGo.png" alt="" class="w-[60vw] h-[60vh]">
                     <p>Creating a Spotify-like app using fyne in Golang</p>
                 </div>
             </div>
@@ -88,15 +88,32 @@
     </main>
 
     <footer class="grenzeFont text-[#DFC5B3] flex justify-center mb-3">
-        <div class="flex gap-3 mt-3 ml-6">
+        <div class="flex gap-3 mt-3 ml-6 text-lg">
             <button onclick="window.location.href='http://127.0.0.1:5500/about.html';"
-                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
-                page</button>
-            <button onclick="window.location.href='http://127.0.0.1:5500/index.html';"
-                class="bg-[#94725C] h-fit w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Home
-                page</button>
+            class="bg-[#94725C] h-20 max-xl:h-12 w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]  hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">About
+            page</button>
+        <button onclick="window.location.href='http://127.0.0.1:5500/index.html';"
+            class="bg-[#94725C] h-20 max-xl:h-12 w-36 py-1 px-6 drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Home
+            page</button>
         </div>
     </footer>
 </body>
+<script>
+function copyToClipboard() {
+    // Get text field
+    var copyText = document.getElementById("myInput");
+  
+    // Select text field
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); // mobile devices
+  
+     // Copy text inside text field
+    navigator.clipboard.writeText(copyText.value);
+  
+    // Alert the copied text
+    alert("Copied the text: " + copyText.value);
+
+  }
+</script>
 
 </html>

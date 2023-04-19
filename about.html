@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 
 <head>
     <meta charset="UTF-8">
@@ -23,12 +24,13 @@
             class="drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] bg-[#94725C] h-10 w-32 hover:bg-[#695654] hover:duration-500 active:bg-[#2B2322] active:duration-300">Project
             page</button>
     </header>
-    <main class="ml-20 grenzeFont overflow-x-scroll text-2xl text-[#DFC5B3] max-xl:text-lg">
-        <div class="flex w-full h-full whitespace-nowrap gap-x-8">
+    
+    <main class="ml-20 grenzeFont overflow-x-scroll scrollHiding text-2xl text-[#DFC5B3] max-xl:text-lg ">
+        <!-- besoin de style="" pour le horizontal scroll + shift+middlemouse -->
+        <div class="flex whitespace-nowrap gap-x-8" style="width: 3000px">
             <div class="w-[900px] h-[700px] flex flex-col items-center">
                 <p class=" drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] mb-12">My about page</p>
-                <img src="/assets/img/meFront.jpg" alt=""
-                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)] mb-12">
+                <div class="hover:bg-[url('/assets/img/meBack.jpg')] bg-[url('/assets/img/meFront.jpg')] bg-cover hover:border-[#695654] rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] mb-3"></div>
                 <p class=" line-through drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Criminal file : [081299]</p>
                 <p class=" grenzeShadowTextlight text-3xl">REDACTED</p>
                 <p class="text-[#2B2322] grenzeShadowText text-lg">| Seize suspect at all cost |</p>
@@ -56,10 +58,8 @@
                 <p>LAST SEEN IN</p>
                 <p>COMPANY</p>
                 <p class="mb-3">OF</p>
-                <img src="/assets/img/lounesFront.png" alt=""
-                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] mb-3">
-                <img src="/assets/img/elisaFront.jpg" alt=""
-                    class="rounded-full w-[322px] h-[318px] border-4 border-[#2B2322]">
+                <div class="hover:bg-[url('/assets/img/lounesBack.jpg')] bg-[url('/assets/img/lounesFront.png')] bg-cover hover:border-[#695654] rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] mb-3"></div>
+                <div class="hover:bg-[url('/assets/img/elisaBack.jpg')] bg-[url('/assets/img/elisaFront.jpg')] bg-cover hover:border-[#695654] rounded-full w-[322px] h-[318px] border-4 border-[#2B2322] mb-3"></div>
             </div>
             <div class="w-[900px] h-[700px] flex flex-col items-center">
                 <div class="flex flex-col items-center">
@@ -76,12 +76,12 @@
 
                     <div class="flex items-center gap-3 mb-3">
                         <img src="/assets/img/pinterestIcon.png" alt="" class="w-[60px] h-[60px]">
-                        <a href="https://pin.it/1UJWGGD" target="_blank" class=" text-[#2B2322] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Visual Criminal Profile
+                        <a href="https://pin.it/1UJWGGD" target="_blank" class=" text-[#2B2322] hover:text-[#6985CF] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Visual Criminal Profile
                             reports</a>
                     </div>
                     <div class="flex items-center gap-3">
                         <img src="/assets/img/youtubeIcon.png" alt="" class="w-[60px] h-[60px]">
-                        <a href="https://youtube.com/playlist?list=PLNSi3-yDyIzFdM3TNz7DK4tXGhXmg07PH" target="_blank" class="text-[#2B2322] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Criminal online activity (
+                        <a href="https://youtube.com/playlist?list=PLNSi3-yDyIzFdM3TNz7DK4tXGhXmg07PH" target="_blank" class="text-[#2B2322] hover:text-[#6985CF] drop-shadow-[0_3px_2px_rgba(0,0,0,0.4)]">Criminal online activity (
                             playlists ) </a>
                     </div>
                 </div>
